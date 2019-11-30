@@ -66,7 +66,7 @@ namespace NorthwindDataMining
             foreach (var test in tests)
             {
                 var prediction = predictionEngine.Predict(test);
-                Console.WriteLine($@"\n For ProductId = {test.ProductId} and  CoPurchaseProductID = {test.CoPurchaseProductId} the predicted score is {Math.Round(prediction.Score)}");
+                Console.WriteLine($@"\n For ProductId = {test.ProductId} and  CoPurchaseProductID = {test.CoPurchaseProductId} the predicted score is {Math.Round(prediction.Score, 1)}");
             }
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();
