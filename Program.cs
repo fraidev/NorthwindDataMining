@@ -48,7 +48,6 @@ namespace NorthwindDataMining
 
             //Passo 6: Testes com as predições 
             var predictionEngine = mlContext.Model.CreatePredictionEngine<ProductEntry, CoPurchasePrediction>(model);
-
             var tests = new List<ProductEntry>()
             {
                 new ProductEntry()
